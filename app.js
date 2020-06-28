@@ -1,22 +1,3 @@
-/* Crear una aplicación que tenga un 
-
--círculo inicialmente rojo, 
--un tablero de control con
-cuatro flechas (arriba, izquierda, derecha y abajo) y 
--una configuración de colores.
-Mediante el tablero de control el círculo debe poder moverse hacia el lado que fue
-indicado. 
-Lo mismo debe suceder con las teclas: si aprieto la tecla derecha, el círculo debe
-moverse hacia la derecha, si aprieto la izquierda, hacia la izquierda.
-
-El color del círculo debe poder elegirse entre rojo, azul y verde. 
-Bonus points:
-• ¿Qué pasa si el círculo llega a un extremo de la pantalla? Pensar cómo solucionar este
-problema (si es que lo es) y programar la solución.
-• Agregar una opción para que el círculo se mueva solo aleatoriamente (un movimiento a la vez, infinitas veces).
-• Agregar otra opción para que el círculo se mueva diagonalmente y cambiar su rumbo
-al chocarse con una pared.*/
-
 window.onload = function() {
 
 	const flechaArriba = document.querySelector('.up')
@@ -31,16 +12,7 @@ window.onload = function() {
 	const colorVerde = document.querySelector('.green')
 
 	const circle = document.querySelector('.circle')
-	/* 
-	function capturarTecla(event) {
-	 	else if (event.key ==='arrowLeft') {
-		}
-	 	else if (event.key ==='arrowRight') {
-		}
-	 	else (event.key ==='arrowDown') {
-		}
-	}
-	*/
+
 	function moverArriba() {
 		circle.style.transform = "translateY(-300px)";
 	}
